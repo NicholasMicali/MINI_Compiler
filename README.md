@@ -2,6 +2,9 @@
 
 This is a Compiler for a self-defined language called MINI. MINI is a simple language with Functions, globals, structs, and other normal language syntax. This project compiles the MINI syntax down to llvm and can be run against the provided benchmarks in a variety of configurations. The Stack-based compiler stores all llvm registers on the stack, while the Register based compiler stores them in virtual registers, and can be optimized. 
 
+data collected from the benchmarks can be found here: 
+https://docs.google.com/spreadsheets/d/1oQvIQjP-pkRZqZSOe-NLakHtyi9A4XFmvcT1w7UP9Dg/edit?usp=sharing
+
 Run instructions are listed below
 
 
