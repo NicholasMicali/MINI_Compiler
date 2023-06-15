@@ -1,0 +1,56 @@
+struct simple
+{
+    int one;
+    struct simple simp;
+};
+
+struct simple globalsimp;
+
+fun tailrecursive(int num) void
+{
+    if(num <= 0)
+    {
+        return;
+    }
+    num = num - 1;
+    tailrecursive(num);
+}
+
+fun add(int x, int y) int
+{
+    return x + y;
+}
+
+fun domath(int num) void
+{
+    while(num > 0)
+    {
+        num = num - 1;
+    }
+}
+
+fun obj(int num) void
+{
+    struct simple tmp;
+    tmp.simp.simp.one = 1;
+    tmp.one = globalsimp.simp.simp.one;
+}
+
+fun eitherOr(int m, int n) int
+{
+    if(n==0)
+    {
+        return n;
+    }
+    else
+    {
+        return m;
+    }
+}
+
+fun main() int
+{
+    int a;
+    
+    return 0;
+}

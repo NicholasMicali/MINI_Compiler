@@ -1,0 +1,29 @@
+function:
+    LU0
+        Prev: []
+        left: LU1, right: LU2
+
+    LU1
+        Prev: [LU0]
+        next: exit
+    LU2
+        Prev: [LU0]
+        left: LU3, right: LU4
+
+    LU3
+        Prev: [LU2, LU3]
+        left: LU3, right: LU4
+
+    LU4
+        Prev: [LU2, LU3]
+        next: exit
+    exit
+        Prev: [LU1, LU4]
+        null
+main:
+    LU5
+        Prev: []
+        next: exit
+    exit
+        Prev: [LU5]
+        null
