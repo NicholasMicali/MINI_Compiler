@@ -1,0 +1,29 @@
+fun computeFib(int input) int {
+   int k;
+   k = 0;
+   if (input == 0) {
+      return k;
+   } 
+   else { 
+      if (input <= 2) {
+         return 1;
+      } 
+      else {
+         return (computeFib(input - 1) + computeFib(input - 2));
+      }
+   }
+}
+
+fun main() int {
+   int input;
+   input = read;
+   print computeFib(input) endl;
+   if (input == 42) {
+      input = 5;
+   }
+   else {
+      input = 10;
+   }
+   print input endl;
+   return 0;
+}
