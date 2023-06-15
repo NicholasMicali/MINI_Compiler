@@ -1,0 +1,41 @@
+struct A
+{
+   int i;
+   bool b;
+   struct A next;
+};
+
+struct A a;
+bool isT;
+int k, j;
+
+fun sum(int x, int y) int{
+   a.next.next.next.i = false;
+   return a.next.next.next.i;
+}
+
+fun struFun() struct A{
+   a = null;
+   return a.next.next.next;
+}
+
+
+fun fib(int i) int {
+   if (i == 0){
+      return 1;
+   }
+   else{
+
+   }
+   return fib(i - 1) + i;
+}
+
+fun main() void {
+   int q;
+   q = sum(5, 9);
+   a.i = 5 / 5;
+   a.b = 5 == false;
+   print(fib(q));
+   a = struFun();
+}
+
